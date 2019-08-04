@@ -5,8 +5,12 @@ body{
     background-size: 100%;
 }
 
+#game-title {
+    color: white;
+}
+
 #game-directions{
-    color: red;
+    color:blue;
     margin-top: 10px;
     margin-bottom: 10px;
 }
