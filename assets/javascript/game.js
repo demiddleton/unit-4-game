@@ -13,7 +13,18 @@ var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
 var totalScoreText = document.getElementById("totalScore-text");
 
+//Create a function to give each button a random value when clicked
+var btnValue1 = Math.floor(Math.random() * 12 + 1);
+console.log(btnValue1);
 
+var btnValue2 = Math.floor(Math.random() * 12 + 1);
+console.log(btnValue2);
+
+var btnValue3 = Math.floor(Math.random() * 12 + 1);
+console.log(btnValue3);
+
+var btnValue4 = Math.floor(Math.random() * 12 + 1);
+console.log(btnValue4);
 
 
 //Dispaly the game data on the HTML
