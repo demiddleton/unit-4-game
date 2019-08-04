@@ -23,7 +23,7 @@ body{
 
 #gem1, #gem2, #gem3, #gem4 {
     
-    margin: 10px 10px 10px 0px;
+    margin: 10px;
     height: 175px;
     
 }
@@ -32,4 +32,8 @@ body{
      width: 150px;
      height: 170px;
      padding: 0px;
+ }
+
+ #totalScore {
+     margin: 10px 0px 0px 0px;
  }
