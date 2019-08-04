@@ -26,6 +26,11 @@ console.log(btnValue3);
 var btnValue4 = Math.floor(Math.random() * 12 + 1);
 console.log(btnValue4);
 
+//Create a function to display the value of the button clicked
+
+
+
+
 
 //Dispaly the game data on the HTML
 targetNumText.textContent = targetNum;
