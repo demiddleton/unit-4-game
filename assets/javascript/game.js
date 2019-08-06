@@ -7,6 +7,7 @@ console.log(targetNum);
 var wins = 0;
 var losses = 0;
 var totalScore = 0;
+var intScore = parseInt(totalScore);
 var buttons = "";
 
 //Create variables that hold references to places in the HTML file to display the outcome.
@@ -48,7 +49,7 @@ $(".buttons").on("click", function() {
     buttons = $(this).val();
     console.log(buttons);
 
-    totalScore += buttons
+    totalScore += parseInt(buttons)
     
     $("#totalScore-text").html(totalScore);
 
