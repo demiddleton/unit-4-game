@@ -1,3 +1,4 @@
+
 //Declare a targetNum array from 19 - 120
 var targetNum = Math.floor(Math.random() * 102 + 19);
 console.log(targetNum);
@@ -38,16 +39,23 @@ console.log(btnValue4);
 
 $("#button-4").val(btnValue4);
 
-
 //Create a function to display the value of the button clicked
+
+
 
 $(".buttons").on("click", function() {
 
     buttons = $(this).val();
     console.log(buttons);
+
+    totalScore += buttons
+    
+    $("#totalScore-text").html(totalScore);
+
     
 
 });
+
 
 
 
@@ -56,3 +64,4 @@ targetNumText.textContent = targetNum;
 winsText.textContent = ("Wins: " + wins);
 lossesText.textContent = ("Losses: " + losses);
 totalScoreText.textContent = totalScore;
+
