@@ -3,6 +3,7 @@ body{
     background-image: url(https://image.shutterstock.com/image-photo/abstract-blue-background-crystal-refractions-260nw-201800117.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-blend-mode: luminosity;
 }
 
 #game-title {
@@ -10,9 +11,10 @@ body{
 }
 
 #game-directions{
-    color:blue;
+    color:black;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-weight: bolder
 }
 
 #targetNum-text, #totalScore-text {

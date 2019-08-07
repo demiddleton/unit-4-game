@@ -59,7 +59,7 @@ $(".buttons").on("click", function () {
         targetNum = Math.floor(Math.random() * 102 + 19);
         targetNumText.textContent = targetNum;
         totalScore = 0;
-        
+
         btnValue1 = Math.floor(Math.random() * 12 + 1);
         $("#button-1").val(btnValue1);
 
@@ -79,11 +79,13 @@ $(".buttons").on("click", function () {
         $("#losses-text").html("Losses: " + losses);
         targetNum = Math.floor(Math.random() * 102 + 19);
         targetNumText.textContent = targetNum;
+        console.log(targetNum);
         totalScore = 0;
 
         btnValue1 = Math.floor(Math.random() * 12 + 1);
         $("#button-1").val(btnValue1);
-
+        console.log(btnValue1);
+        
         btnValue2 = Math.floor(Math.random() * 12 + 1);
         $("#button-2").val(btnValue2);
 
