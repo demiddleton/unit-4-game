@@ -17,8 +17,9 @@ body{
 
 #targetNum-text, #totalScore-text {
     text-align: center;
-    color: red;
+    color: black;
     font-size: 28px;
+    font-weight: bolder;
 }
 
 #gem1, #gem2, #gem3, #gem4 {

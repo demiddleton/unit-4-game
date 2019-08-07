@@ -7,7 +7,7 @@ console.log(targetNum);
 var wins = 0;
 var losses = 0;
 var totalScore = 0;
-var intScore = parseInt(totalScore);
+//var intScore = parseInt(totalScore);
 var buttons = "";
 
 //Create variables that hold references to places in the HTML file to display the outcome.
@@ -42,19 +42,59 @@ $("#button-4").val(btnValue4);
 
 //Create a function to display the value of the button clicked
 
-
-
-$(".buttons").on("click", function() {
+$(".buttons").on("click", function () {
 
     buttons = $(this).val();
     console.log(buttons);
 
-    totalScore += parseInt(buttons)
-    
+    totalScore += parseInt(buttons);
+
     $("#totalScore-text").html(totalScore);
 
-    
 
+    if (totalScore === targetNum) {
+        wins++;
+
+        $("#wins-text").html("Wins: " + wins);
+        targetNum = Math.floor(Math.random() * 102 + 19);
+        targetNumText.textContent = targetNum;
+        totalScore = 0;
+        
+        btnValue1 = Math.floor(Math.random() * 12 + 1);
+        $("#button-1").val(btnValue1);
+
+        btnValue2 = Math.floor(Math.random() * 12 + 1);
+        $("#button-2").val(btnValue2);
+
+        btnValue3 = Math.floor(Math.random() * 12 + 1);
+        $("#button-3").val(btnValue3);
+
+        btnValue4 = Math.floor(Math.random() * 12 + 1);
+        $("#button-4").val(btnValue4);
+    }
+
+    if (totalScore > targetNum) {
+        losses++;
+
+        $("#losses-text").html("Losses: " + losses);
+        targetNum = Math.floor(Math.random() * 102 + 19);
+        targetNumText.textContent = targetNum;
+        totalScore = 0;
+
+        btnValue1 = Math.floor(Math.random() * 12 + 1);
+        $("#button-1").val(btnValue1);
+
+        btnValue2 = Math.floor(Math.random() * 12 + 1);
+        $("#button-2").val(btnValue2);
+
+        btnValue3 = Math.floor(Math.random() * 12 + 1);
+        $("#button-3").val(btnValue3);
+
+        btnValue4 = Math.floor(Math.random() * 12 + 1);
+        $("#button-4").val(btnValue4);
+    }
+
+  
 });
 
 
