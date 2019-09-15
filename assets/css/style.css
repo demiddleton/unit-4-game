@@ -17,11 +17,30 @@ body{
     font-weight: bolder
 }
 
+#target-num, #totalScore {
+    margin-right: 10px; 
+    margin-top: 20px;
+}
+
+#target-num {
+    margin-left: 130px;
+}
+
+ #gameResults {
+    margin-left: 10px;    
+    margin-top: 20px;
+}
+
 #targetNum-text, #totalScore-text {
     text-align: center;
     color: black;
     font-size: 28px;
     font-weight: bolder;
+}
+
+#gems {
+    margin-left: 180px;
+    margin-top: 40px;
 }
 
 #gem1, #gem2, #gem3, #gem4 {
@@ -37,6 +56,4 @@ body{
      padding: 0px;
  }
 
- #totalScore {
-     margin: 10px 0px 0px 0px;
- }
+ 
